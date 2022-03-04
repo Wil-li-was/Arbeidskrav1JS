@@ -135,7 +135,7 @@ function deleteItem3(i) {
 
     for (let i = 0; i < prices.length; i++) {
       sum -= -prices[i];
-      sumList.innerHTML = `TOTALSUM: ${sum} KR`;
+      sumList.innerHTML = `TOTALSUM : ${sum} KR`;
     }
   } else {
     alert(`${emptyArray[i].item} er IKKE slettet.`);
