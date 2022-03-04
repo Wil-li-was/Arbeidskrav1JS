@@ -1,8 +1,8 @@
 alert("Velkommen!");
 alert("Fyll inn varer og eventuelt pris i ønsket kategori");
-// 
-// 
-// 
+//
+//
+//
 var fullList = document.getElementById("full-list");
 
 var fullArray = [];
