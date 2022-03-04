@@ -1,0 +1,76 @@
+body {
+  display: grid;
+  background-color: rgb(255, 255, 196);
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 30rem 30rem 30rem;
+  grid-template-areas:
+    "header header header"
+    "main main main";
+}
+
+header {
+  padding-bottom: 100px;
+  grid-area: header;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+main {
+  grid-area: main;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-areas: " list1 list2 list3";
+}
+.container1 {
+  grid-area: list1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+
+.container2 {
+  grid-area: list2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+.container3 {
+  grid-area: list3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+}
+.lists {
+  width: 300px;
+}
+input {
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+button {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+ul {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}

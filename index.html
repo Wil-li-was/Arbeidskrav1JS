@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbeidskrav JS</title>
+    <link rel="stylesheet" href="/Styles/Styles.css" />
+  </head>
+  <body>
+    <Header>Handleliste!</Header>
+    
+    <main>
+      <div class="container1">
+        <input
+          type="text"
+          id="full-input"
+          placeholder="varer du har nok av"
+        />
+        <button id="add-btn" onclick="addGrocery()">Legg til</button>
+
+        <div class="lists">
+          <ul id="full-list"></ul>
+        </div>
+      </div>
+
+      <div class="container2">
+        <input
+          type="text"
+          id="inStockInput"
+          placeholder="Varer du begynner å gå tom for"
+        />
+        <button type="submit" id="add-btn" onclick="addGrocery2()">
+          Legg til
+        </button>
+        <div class="lists">
+          <ul id="inStocklist"></ul>
+        </div>
+      </div>
+
+      <div class="container3">
+        <input
+          type="text"
+          id="empty-input"
+          placeholder="Varer du må handle"
+        />
+
+        <input type="text" id="price-input" placeholder="Pris" />
+        <button id="add-btn" onclick="addGrocery3()">Legg til</button>
+        <div class="lists">
+          <ul id="empty-list"></ul>
+          <p id="sum-list"></p>
+        </div>
+      </div>
+      
+      </div>
+      <script src="/JS/script.js"></script>
+    </main>
+  </body>
+</html>
